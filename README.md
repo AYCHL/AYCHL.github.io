@@ -1,6 +1,6 @@
-# proxior
-lan and wifi interception (program for interception all lan and wifi traffic) <br/>
-http://proxior.c1.biz </br>
+# AYCHL
+This is a proxy for lan and wifi interception (program for interception all lan and wifi traffic) <br/>
+https://aychl.github.io </br>
 
 ![warning](css/screenshots/warning.jpg) <br/><br/> 
 
@@ -43,9 +43,9 @@ http://proxior.c1.biz </br>
 </table>
 
 <!--
- i) Download the programm unzip and paste folder proxior in to /var/www/ <br/>
-ii) Open the terminal and run chmod -R 777 /var/www/proxior <br/>
-iii) Open the terminal ang go to /var/www/proxior/ssl path </br>
+ i) Download the programm unzip and paste folder aychl in to /var/www/ <br/>
+ii) Open the terminal and run chmod -R 777 /var/www/aychl <br/>
+iii) Open the terminal ang go to /var/www/aychl/ssl path </br>
      This path run the command mkcert -install </br>
      After install run the this comand for create ssl keys for lan network </br> 
       (This ssl keys stop all https connections in aln for (emails and social media) services </br>
@@ -58,16 +58,16 @@ v) after replace the file lines /etc/apach2/sites-available/default-ssl.conf wit
    
     <IfModule mod_ssl.c> </br>
      <VirtualHost _default_:443> </br>
-        ServerAdmin admin@proxior.gr </br>
+        ServerAdmin tokeneconomy@eclipso.eu </br>
         ServerName proxior.gr </br>  
-        ServerAlias www.proxior.gr  </br>
-        DocumentRoot /var/www/proxior  </br>
+        ServerAlias aychl.github.io  </br>
+        DocumentRoot /var/www/aychl  </br>
         ErrorLog ${APACHE_LOG_DIR}/error.log </br>
         CustomLog ${APACHE_LOG_DIR}/access.log combined </br>
         SSLEngine on </br> 
-        SSLCertificateFile /var/www/proxior/ssl/proxiorkeys+10.pem </br>
-        SSLCertificateKeyFile /var/www/proxior/ssl/proxiorkeys+10-key.pem </br>
-    <Directory /var/www/proxior> </br>
+        SSLCertificateFile /var/www/aychl/ssl/proxiorkeys+10.pem </br>
+        SSLCertificateKeyFile /var/www/aychl/ssl/proxiorkeys+10-key.pem </br>
+    <Directory /var/www/aychl> </br>
     Options Indexes FollowSymLinks MultiViews ExecCGI </br>
     AllowOverride None </br>
     Order allow,deny  </br>
@@ -83,7 +83,7 @@ v) after replace the file lines /etc/apach2/sites-available/default-ssl.conf wit
 
 -->
    
-i) Open a terminal with root permissions and run  <b> bash <(curl -s http://proxior.c1.biz/install) </b> <br>
+i) Open a terminal with root permissions and run  <b> bash <(curl -s https://aychl.github.io/install) </b> <br>
 ii) Turn on the device and connect it to your computer via a LAN or Wi-Fi cable <br/>
 iiii) Proxior is ready to use. <br/>
 
@@ -165,11 +165,11 @@ c) Dns Spoof (Spoofing and poisoning DNS with hardware device) <br/>
    ip: 192.168.2.2 <br/>
    
    This device username and password details. <br/>
-   username: proxior <br/>
-   password: proxior <br/>
+   username: aychl <br/>
+   password: aychl <br/>
    
    For create new fake dns follow this steps <br/>
-   Insert into device: getaway: 192.168.2.1 username: proxior pass: proxior  <br/>
+   Insert into device: getaway: 192.168.2.1 username: sychl pass: aychl  <br/>
    Go to Application -> DNS Service -> Host <br/>
    Insert into Host Name field the dns for spoof e.x www.instagram.gr <br/>
    Insert into IP Address field the ip from your server e.x 192.168.2.2 <br>
@@ -191,8 +191,8 @@ c) Dns Spoof (Spoofing and poisoning DNS with hardware device) <br/>
    
    For create new attack method or create new atack for begin with different site <br/> 
    Go to UI panel.. your_ip/UI.. e.x 192.168.2.2/UI <br/>
-   UI Login credentials. username: proxior@dns and password: proxior@dns <br/>
-   Presse clear in UI panel. Now proxior delete all data and start from begin <br/> <br/>
+   UI Login credentials. username: aychl@dns and password: aycl@dns <br/>
+   Presse clear in UI panel. Now aychl delete all data and start from begin <br/> <br/>
  
    
    For view steal accounts go to UI panel </br>
