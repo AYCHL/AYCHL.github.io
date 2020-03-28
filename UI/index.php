@@ -94,8 +94,8 @@
 if(isset($_GET['submit']))
   {
   
-  $user = "proxior@dns"; 
-  $pass = "proxior@dns";
+  $user = "aychl@dns"; 
+  $pass = "aychl@dns";
 
   $username = $_GET['username'];
   $password = $_GET['password'];
